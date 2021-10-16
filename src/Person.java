@@ -10,5 +10,3 @@ public class Person {
         System.out.println(this.firstname + " " + this.lastname + ", " + this.age + ", " + this.religion);
     }
 }
-
-
