@@ -4,11 +4,14 @@ public class Konto {
 
     private String kontoInhaber;
     private double kontoStand;
+    private int idNumber; // 1...999999
+    private static int s_countAccount = 10;
 
     public Konto(String inhaber){
         // Konstruktor
         this.kontoInhaber = inhaber;
         this.kontoStand = 0.0;
+        this.idNumber = s_countAccount++;
     }
 
     /*
@@ -32,6 +35,7 @@ public class Konto {
     }
 
     public void printKonto(){
+        System.out.println("ID: " + this.idNumber);
         System.out.println("Inhaber: " + this.kontoInhaber);
         System.out.println("Kontostand: " + this.kontoStand);
     }
