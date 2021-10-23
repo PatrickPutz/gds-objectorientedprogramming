@@ -39,4 +39,6 @@ public class Konto {
         System.out.println("Inhaber: " + this.kontoInhaber);
         System.out.println("Kontostand: " + this.kontoStand);
     }
+
+    // merge conflict test
 }
